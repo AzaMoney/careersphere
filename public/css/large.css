@@ -1,0 +1,481 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right,#2e033a, purple);
+    color: #000;
+    text-align: center;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .blink {
+    animation: blink-animation 1s infinite alternate;
+}
+
+@keyframes blink-animation {
+    0% {
+        color: #2e033a;
+        opacity: 1;
+    }
+    100% {
+        color: blue;
+        opacity: 0.5;
+    }
+}
+
+@keyframes blink-background {
+    0% {
+        background-color: purple;
+    }
+    100% {
+        background-color: #2e033a;
+    }
+}
+
+/*********************
+* Landing page header
+**********************/
+.landing-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* General Link Styling */
+.landing-header > a, nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 20px;
+}
+
+.landing-header a:hover {
+    color: gray;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* Styling for Join/Sign-In Section */
+.join-area {
+    border: 5px solid #2e033a;
+    border-radius: 25px;
+    padding: 0px 0 0px 15px;
+    margin-left: 30px;
+}
+
+nav > div > a {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.sign-button {
+    background-color: #2e033a;
+    margin-left: 10px;
+    border-radius: 18px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    animation: blink-background 1s infinite alternate; /* Apply the animation */
+}
+
+/*********************
+* FAB
+*********************/
+
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* width: 75px;
+    height: 75px;
+    background-color: #007bff; */
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fab > img {
+    padding-top: 18px;
+}
+
+/* .fab:hover {
+    background-color: #0056b3;
+} */
+
+.contact-form {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/***************
+* Landing Main
+****************/
+.landing-hero-img {
+    position: relative; /* Enable positioning for child elements */
+    background-color: white;
+    padding: 20px 0;
+}
+
+.landing-hero-img > img {
+    width: 100%;
+    display: block; /* Removes gaps caused by inline images */
+}
+
+.join-button {
+    position: absolute; /* Position relative to the parent container */
+    bottom: 30px; /* Adjust as needed for spacing */
+    right: 20px; /* Adjust as needed for spacing */
+    border-radius: 25px;
+    padding: 10px 0 10px 15px;
+    margin-left: 30px;
+}
+
+.join-button > a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.landing-page-talent {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(245, 245, 245, 0.815);
+    padding: 80px 30px 50px 30px;
+    text-align: left;
+}
+
+.talent-text-container {
+    padding: 0 10px;
+}
+
+.landing-page-talent h2, .landing-page-talent p {
+    font-size: 2rem;
+}
+
+.talent-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Aligns cards to the right */
+    align-items: flex-end; /* Aligns cards to the bottom */
+}
+
+.talent-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    position: relative; /* Ensure roles stay within the card */
+    transform: scale(1); /* Default scale */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.talent-card > a {
+    color: white;
+}
+
+.talent-card:hover {
+    background-color: white;
+    color: purple;
+    transform: scale(1.1); /* Slight zoom-out effect */
+    z-index: 10; /* Bring the hovered card to the top */
+}
+
+.talent-card-roles {
+    display: none;
+    position: absolute;
+    bottom: 1px; /* Position roles near the bottom */
+    left: 1px; /* Adjust based on padding/margin */
+    background-color: rgba(255, 255, 255, 1); /* Add background to roles */
+    color: purple;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for roles */
+    font-size: 0.8rem;
+}
+
+.talent-card:hover .talent-card-roles {
+    display: block; /* Show roles on hover */
+}
+
+.talent-card-roles > p {
+    font-size: 1.45rem;
+    margin: 10px 0;
+}
+
+.job-posting-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.job-posting-card {
+    background-color: white;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 100px 0;
+}
+
+.job-posting-card > a:hover {
+    color: black;
+}
+
+.landing-page-competition {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgba(245, 245, 245, 0.815);
+}
+
+.landing-page-competition-img {
+    grid-column: 1/2;
+    text-align: left;
+    padding: 70px 0;
+    background-color: white;
+    border-radius: 0% 50% 50% 0%;
+}
+
+.landing-page-competition-img > img {
+    width: 80%;
+    margin-left: 30px;
+}
+
+.landing-page-competition-text {
+    text-align: left;
+    padding: 70px 30px;
+}
+
+.landing-page-competition-text > h2 {
+    font-size: 2rem;
+}
+
+.landing-page-competition-text > p {
+    font-size: 1.8rem;
+}
+
+.landing-page-competition-text > ul {
+    font-size: 1.8rem;
+}
+
+.landing-page-competition-text > a {
+    font-size: 1.5rem;
+}
+
+.landing-page-resume {
+    color: white;
+    padding: 100px;
+}
+
+.landing-page-resume > h2 {
+    font-size: 2rem;
+}
+
+.landing-page-resume-sessions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.landing-page-resume-sessions > div {
+    padding: 0 60px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.landing-page-resume-sessions > div a {
+    color: white;
+    text-decoration: none;
+}
+
+/********************
+* Laning page footer
+*********************/
+
+footer {
+    background-color: #2e033a;
+    padding: 40px 0 10px 0;
+}
+
+footer > p {
+    margin: 0;
+    color: rgb(196, 196, 196);
+    margin: 5px;
+}
+
+footer > a {
+    color: blue;
+}
+
+footer > a:hover {
+    color: grey;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo > a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-logo > div > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-logo > a:hover, .footer-logo > div > a:hover {
+    color: gray;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-social img {
+    width: 50px;
+}
+
+.footer-social p {
+    color: white;
+    font-size: 1rem;
+}
+
+.second-hr {
+    width: 40%;
+    margin: 30px auto;
+}
