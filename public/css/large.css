@@ -144,6 +144,10 @@ nav > div > a {
     animation: blink-background 1s infinite alternate; /* Apply the animation */
 }
 
+.Hamburger-menu, .close-menu {
+    display: none;
+}
+
 /*********************
 * FAB
 *********************/
@@ -345,19 +349,19 @@ nav > div > a {
 .landing-page-competition-img {
     grid-column: 1/2;
     text-align: left;
-    padding: 70px 0;
+    padding: 40px 0;
     background-color: white;
     border-radius: 0% 50% 50% 0%;
 }
 
 .landing-page-competition-img > img {
-    width: 80%;
+    width: 75%;
     margin-left: 30px;
 }
 
 .landing-page-competition-text {
     text-align: left;
-    padding: 70px 30px;
+    padding: 60px 30px;
 }
 
 .landing-page-competition-text > h2 {
