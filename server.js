@@ -15,6 +15,7 @@ app.set('layout', './layouts/layout');
 // Routes
 app.use(staticRoutes);
 app.get("/", baseController.buildLandingPage);
+app.use("/p", require('./routes/pRoutes'));
 
 // Start the server
 app.listen(PORT, () => {

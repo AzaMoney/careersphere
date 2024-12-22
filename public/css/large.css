@@ -55,12 +55,13 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: white;
 }
 
 /* General Link Styling */
 .landing-header > a, nav > a {
     text-decoration: none;
-    color: white;
+    color: #2e033a;
     font-size: 1.5rem;
     margin: 0 20px;
 }
@@ -78,7 +79,7 @@ html, body {
 
 /* Dropdown Button */
 .dropbtn {
-    color: white;
+    color: #2e033a;
     text-decoration: none;
     font-size: 1.7rem;
     cursor: pointer;
@@ -100,7 +101,7 @@ html, body {
     padding: 10px 15px;
     text-decoration: none;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .dropdown-content a:hover {
@@ -129,7 +130,7 @@ nav {
 
 nav > div > a {
     font-size: 1.3rem;
-    color: white;
+    color: #2e033a;
     text-decoration: none;
 }
 
