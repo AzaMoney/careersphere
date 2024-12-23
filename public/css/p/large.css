@@ -62,6 +62,9 @@ html, body {
 /*************
 * Main 
 **************/
+main{
+    padding: 50px 20px;
+}
 
 .resume-header {
     display: grid;
@@ -110,5 +113,39 @@ html, body {
 .resume-data-personal{
     display: flex;
     background-color: gray;
-    padding: 120px 10px 0 10px;
+    padding: 120px 15px 0 15px;
+}
+
+.resume-data-professional {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 15px;
+}
+
+.resume-data-professional-section {
+    display: flex;
+}
+
+.resume-data-professional h3 {
+    margin: 0;
+    border-bottom:  2px solid black;
+}
+
+.resume-data-professional-section > div {
+    padding: 0 10px;
+}
+
+.resume-data-professional > div  img {
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 40px;
+}
+
+
+.reusme-vertical-line {
+    border-left: 2px solid black;
+    height: 80px;
+    margin: -10px 0 0 19px;
 }
